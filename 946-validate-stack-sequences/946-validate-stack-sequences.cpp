@@ -1,6 +1,38 @@
 class Solution {
 public:
     bool validateStackSequences(vector<int>& pushed, vector<int>& popped) {
+        // Without Using Extra Space
+        int len = pushed.size();
+        int i=0, j=0, k=0;
+        while(i<len && j<len){
+            if(pushed[i] == popped[j]){
+                i++;
+                j++;
+            }else if(k>0 && pushed[k-1]==popped[j]){
+                k--;
+                j++;
+            }else{
+                pushed[k++] = pushed[i++];
+            }
+        }
+        while(k>0 && j<len){
+            if(pushed[k-1] == popped[j]){
+                k--;
+                j++;
+            }else{
+                return false;
+            }
+        }
+        if(j == len){
+            return true;
+        }
+        return false;
+        
+        
+        
+        
+        /*
+        // Using Space
         int len1 = pushed.size();
         int len2 = popped.size();
         if(len2 == 0){
@@ -35,5 +67,6 @@ public:
             return true;
         }
         return false;
+        */
     }
 };
