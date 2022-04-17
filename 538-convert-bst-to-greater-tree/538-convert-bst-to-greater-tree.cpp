@@ -69,14 +69,14 @@ class Solution {
 public:
     TreeNode* convertBST(TreeNode* root) {
         // Third Try
-        int sum = 0;
-        solve(root, sum);
-        return root;
+        // int sum = 0;
+        // solve(root, sum);
+        // return root;
         
         
         // Second Try
-        // int t = genereateNewTree(root, 0);
-        // return root;
+        int t = genereateNewTree(root, 0);
+        return root;
         
         // First Try
         // vector<int> temp;
