@@ -10,40 +10,59 @@
  * };
  */
 class Solution {
-    void getAllElements(TreeNode* root, vector<int>& temp){
-        if(root == NULL){
-            return ;
-        }
-        getAllElements(root->left, temp);
-        temp.push_back(root->val);
-        getAllElements(root->right, temp);
-    }
+//     void getAllElements(TreeNode* root, vector<int>& temp){
+//         if(root == NULL){
+//             return ;
+//         }
+//         getAllElements(root->left, temp);
+//         temp.push_back(root->val);
+//         getAllElements(root->right, temp);
+//     }
     
-    TreeNode* createNewTree(TreeNode* root, vector<int>& temp){
-        if(root == NULL){
-            return NULL;
-        }
+//     TreeNode* createNewTree(TreeNode* root, vector<int>& temp){
+//         if(root == NULL){
+//             return NULL;
+//         }
         
-        int t = 0;
-        for(int i=0; i<temp.size(); i++){
-            if(root->val <= temp[i]){
-                t += temp[i];
-            }
-        }
-        root->val = t;
-        if(root->left != NULL){
-            root->left = createNewTree(root->left, temp);
+//         int t = 0;
+//         for(int i=0; i<temp.size(); i++){
+//             if(root->val <= temp[i]){
+//                 t += temp[i];
+//             }
+//         }
+//         root->val = t;
+//         if(root->left != NULL){
+//             root->left = createNewTree(root->left, temp);
+//         }
+//         if(root->right != NULL){
+//             root->right = createNewTree(root->right, temp);
+//         }
+//         return root;
+//     }
+    
+    int genereateNewTree(TreeNode* root, int adder){
+        if(root == NULL){
+            return 0;
         }
         if(root->right != NULL){
-            root->right = createNewTree(root->right, temp);
+            root->val += genereateNewTree(root->right, adder)-adder;
         }
-        return root;
+        root->val += adder;
+        int t = 0;
+        if(root->left != NULL){
+            t = genereateNewTree(root->left, root->val);
+            return t;
+        }
+        return root->val;
     }
     
 public:
     TreeNode* convertBST(TreeNode* root) {
-        vector<int> temp;
-        getAllElements(root, temp);
-        return createNewTree(root, temp);
+        int t = genereateNewTree(root, 0);
+        return root;
+        
+        // vector<int> temp;
+        // getAllElements(root, temp);
+        // return createNewTree(root, temp);
     }
 };
