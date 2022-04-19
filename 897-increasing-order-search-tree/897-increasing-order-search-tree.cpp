@@ -38,10 +38,33 @@ class Solution {
         return root;
     }
     
+    void increasingBST_helper(TreeNode* root, TreeNode* & ans){
+        if(root == NULL){
+            return ;
+        }
+        // if(ans != NULL){
+        //     cout << ans->val << endl;
+        // }else{
+        //     cout << "NO" << endl;
+        // }
+        increasingBST_helper(root->right, ans);
+        root->right = ans;
+        ans = root;
+        increasingBST_helper(root->left, ans);
+        root->left = NULL;
+    }
+    
 public:
     TreeNode* increasingBST(TreeNode* root) {
-        stack<TreeNode*> store;
-        getAllNodes(root, store);
-        return createTree(store);
+        // Second Try
+        TreeNode* ans = NULL;
+        increasingBST_helper(root, ans);
+        return ans;
+        
+        
+        // First Try
+        // stack<TreeNode*> store;
+        // getAllNodes(root, store);
+        // return createTree(store);
     }
 };
