@@ -11,24 +11,53 @@
 class Solution {
 public:
     ListNode* swapNodes(ListNode* head, int k) {
-        vector<int> temp_arr;
         ListNode* temp = head;
+        int len = 0;
         while(temp != NULL){
-            temp_arr.push_back(temp->val);
+            len++;
             temp = temp->next;
         }
-        if(k>temp_arr.size() || k<=0){
+        
+        if(k<0 || k>len){
             return head;
         }
-        int t = temp_arr[k-1];
-        temp_arr[k-1] = temp_arr[temp_arr.size()-k];
-        temp_arr[temp_arr.size()-k] = t;
+        
+        ListNode* pre = NULL;
+        int i = 1;
         temp = head;
-        int i = 0;
-        while(temp != NULL){
-            temp->val = temp_arr[i++];
+        while(i < k){
             temp = temp->next;
+            i++;
         }
+        pre = temp;
+        i = 0;
+        temp = head;
+        while(i < len-k){
+            temp = temp->next;
+            i++;
+        }
+        swap(temp->val, pre->val);
         return head;
+        
+        
+        // vector<int> temp_arr;
+        // ListNode* temp = head;
+        // while(temp != NULL){
+        //     temp_arr.push_back(temp->val);
+        //     temp = temp->next;
+        // }
+        // if(k>temp_arr.size() || k<=0){
+        //     return head;
+        // }
+        // int t = temp_arr[k-1];
+        // temp_arr[k-1] = temp_arr[temp_arr.size()-k];
+        // temp_arr[temp_arr.size()-k] = t;
+        // temp = head;
+        // int i = 0;
+        // while(temp != NULL){
+        //     temp->val = temp_arr[i++];
+        //     temp = temp->next;
+        // }
+        // return head;
     }
 };
