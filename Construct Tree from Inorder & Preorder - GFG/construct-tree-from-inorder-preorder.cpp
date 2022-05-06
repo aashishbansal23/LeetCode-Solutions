@@ -47,7 +47,7 @@ class Solution{
         int val = pre[preStart++];
         Node* newNode = new Node(val);
         int index = -1;
-        for(int i=0; i<n; i++){
+        for(int i=inStart; i<=inEnd; i++){
             if(in[i] == val){
                 index = i;
                 break;
