@@ -19,42 +19,72 @@ public:
 class Solution {
 public:
     Node* connect(Node* root) {
-        if(root==NULL || (root->left==NULL && root->right==NULL)){
+        if(!root || (!root->left && !root->right)){
             return root;
         }
-        int count = 1;
         queue<Node*> q;
         q.push(root);
         while(!q.empty()){
-            int curr_count = 0;
-            Node* curr = q.front();
-            q.pop();
-            curr_count++;
-            int temp = 0;
-            if(curr->left != NULL){
-                q.push(curr->left);
-                temp++;
-            }
-            if(curr->right != NULL){
-                q.push(curr->right);
-                temp++;
-            }
-            while(curr_count < count){
-                curr->next = q.front();
-                curr = q.front();
+            int size = q.size();
+            while(size > 1){
+                Node* frontNode = q.front();
                 q.pop();
-                curr_count++;
-                if(curr->left != NULL){
-                    q.push(curr->left);
-                    temp++;
+                frontNode->next = q.front();
+                if(frontNode->left){
+                    q.push(frontNode->left);
                 }
-                if(curr->right != NULL){
-                    q.push(curr->right);
-                    temp++;
+                if(frontNode->right){
+                    q.push(frontNode->right);
                 }
+                size--;
             }
-            count = temp;
+            Node* frontNode = q.front();
+            q.pop();
+            if(frontNode->left){
+                q.push(frontNode->left);
+            }
+            if(frontNode->right){
+                q.push(frontNode->right);
+            }
         }
         return root;
+        
+        // if(root==NULL || (root->left==NULL && root->right==NULL)){
+        //     return root;
+        // }
+        // int count = 1;
+        // queue<Node*> q;
+        // q.push(root);
+        // while(!q.empty()){
+        //     int curr_count = 0;
+        //     Node* curr = q.front();
+        //     q.pop();
+        //     curr_count++;
+        //     int temp = 0;
+        //     if(curr->left != NULL){
+        //         q.push(curr->left);
+        //         temp++;
+        //     }
+        //     if(curr->right != NULL){
+        //         q.push(curr->right);
+        //         temp++;
+        //     }
+        //     while(curr_count < count){
+        //         curr->next = q.front();
+        //         curr = q.front();
+        //         q.pop();
+        //         curr_count++;
+        //         if(curr->left != NULL){
+        //             q.push(curr->left);
+        //             temp++;
+        //         }
+        //         if(curr->right != NULL){
+        //             q.push(curr->right);
+        //             temp++;
+        //         }
+        //     }
+        //     count = temp;
+        // }
+        // return root;
     }
 };
