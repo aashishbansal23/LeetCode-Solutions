@@ -36,8 +36,32 @@ class Solution {
         return findTargetHelp(root, temp->right, k);
     }
     
+    void getAllElements(TreeNode* root, vector<int>& elements){
+        if(root == NULL){
+            return ;
+        }
+        getAllElements(root->left, elements);
+        elements.push_back(root->val);
+        getAllElements(root->right, elements);
+    }
+    
 public:
     bool findTarget(TreeNode* root, int k) {
-        return findTargetHelp(root, root, k);
+        vector<int> elements;
+        getAllElements(root, elements);
+        int i=0, j=elements.size()-1;
+        while(i < j){
+            if(elements[i]+elements[j] == k){
+                return true;
+            }else if(elements[i]+elements[j] > k){
+                j--;
+            }else{
+                i++;
+            }
+        }
+        return false;
+        
+        // First Try
+        // return findTargetHelp(root, root, k);
     }
 };
