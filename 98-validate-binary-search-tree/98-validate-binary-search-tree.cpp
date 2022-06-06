@@ -21,12 +21,12 @@ class Solution {
             if(root->right != NULL){
                 return false;
             }
-            return (validateBST(root->left, minRange, root->val-1) && validateBST(root->right, root->val, maxRange));
+            return (validateBST(root->left, minRange, root->val-1));
         }else if(root->val == INT_MIN){
             if(root->left != NULL){
                 return false;
             }
-            return (validateBST(root->left, minRange, root->val) && validateBST(root->right, root->val+1, maxRange));
+            return (validateBST(root->right, root->val+1, maxRange));
         }else{
             return (validateBST(root->left, minRange, root->val-1) && validateBST(root->right, root->val+1, maxRange));
         }
