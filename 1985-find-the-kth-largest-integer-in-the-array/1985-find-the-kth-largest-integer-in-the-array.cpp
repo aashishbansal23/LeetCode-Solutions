@@ -16,22 +16,23 @@ public:
             return "";
         }
         sort(nums.begin(), nums.end(), compator);
-        priority_queue<string, vector<string>, greater<string>> pq;
-        for(int i=0; i<k; i++){
-            if(pq.empty()){
-                pq.push(nums[i]);
-                continue;
-            }
-            string temp = pq.top();
-            if(temp.length()==nums[i].length()){
-                pq.push(nums[i]);
-            }else{
-                while(!pq.empty()){
-                    pq.pop();
-                }
-                pq.push(nums[i]);
-            }
-        }
-        return pq.top();
+        return nums[k-1];
+        // priority_queue<string, vector<string>, greater<string>> pq;
+        // for(int i=0; i<k; i++){
+        //     if(pq.empty()){
+        //         pq.push(nums[i]);
+        //         continue;
+        //     }
+        //     string temp = pq.top();
+        //     if(temp.length()==nums[i].length()){
+        //         pq.push(nums[i]);
+        //     }else{
+        //         while(!pq.empty()){
+        //             pq.pop();
+        //         }
+        //         pq.push(nums[i]);
+        //     }
+        // }
+        // return pq.top();
     }
 };
