@@ -25,12 +25,44 @@ class Solution {
         }
     }
     
+    int dfsUsingDP(TreeNode* root, int& ans){
+        if(root == NULL){
+            return 1;
+        }
+        int leftAns = dfsUsingDP(root->left, ans);
+        int rightAns = dfsUsingDP(root->right, ans);
+        if(leftAns==0 || rightAns==0){
+            ans++;
+            return 2;
+        }else if(leftAns==2 || rightAns==2){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+    
 public:
     int minCameraCover(TreeNode* root) {
         int ans = 0;
-        set<TreeNode*> visited;
-        visited.insert(NULL);
-        dfs(root, NULL, visited, ans);
+        // 0 -> No Camera is covering this node
+        // 1 -> Covered with the camera
+        // 2 -> node has camera
+        int rootAns = dfsUsingDP(root, ans);
+        if(rootAns == 0){
+            ans++;
+        }
         return ans;
+        
+        
+        
+        
+        
+        
+        // First Try
+        // int ans = 0;
+        // set<TreeNode*> visited;
+        // visited.insert(NULL);
+        // dfs(root, NULL, visited, ans);
+        // return ans;
     }
 };
