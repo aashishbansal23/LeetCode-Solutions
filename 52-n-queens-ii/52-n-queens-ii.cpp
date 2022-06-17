@@ -1,21 +1,52 @@
 class Solution {
-public:
-    int totalNQueens(int n) {
-        vector<bool> col(n), diag(2*n-1), anti_diag(2*n-1);
-        return solve(col, diag, anti_diag, 0);
-    }
-    int solve(vector<bool>& col, vector<bool>& diag, vector<bool>& anti_diag, int row) {
-        int n = size(col), count = 0;
-        if(row == n){
-            return 1;
+    bool isSafe(int row, int col, vector<vector<bool>>& board, int n){
+        int x = row;
+        int y = 0;
+        while(y < col){
+            if(board[x][y]){
+                return false;
+            }
+            y++;
         }
-        for(int column = 0; column < n; column++){
-            if(!col[column] && !diag[row + column] && !anti_diag[row - column + n - 1]){
-                col[column] = diag[row + column] = anti_diag[row - column + n - 1] = true;
-                count += solve(col, diag, anti_diag, row + 1);
-                col[column] = diag[row + column] = anti_diag[row - column + n - 1] = false;
+        y = col;
+        while(x>=0 && y>=0){
+            if(board[x][y]){
+                return false;
+            }
+            x--;
+            y--;
+        }
+        x = row;
+        y = col;
+        while(x<n && y>=0){
+            if(board[x][y]){
+                return false;
+            }
+            x++;
+            y--;
+        }
+        return true;
+    }
+    
+    void totalNQueensHelp(int col, vector<vector<bool>>& board, int n, int& ans){
+        if(col == n){
+            ans++;
+            return ;
+        }
+        for(int i=0; i<n; i++){
+            if(isSafe(i, col, board, n)){
+                board[i][col] = true;
+                totalNQueensHelp(col+1, board, n, ans);
+                board[i][col] = false;
             }
         }
-        return count;
+    }
+    
+public:
+    int totalNQueens(int n) {
+        vector<vector<bool>> board(n, vector<bool>(n, false));
+        int ans = 0;
+        totalNQueensHelp(0, board, n, ans);
+        return ans;
     }
 };
