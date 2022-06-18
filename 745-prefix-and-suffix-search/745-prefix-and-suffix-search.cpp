@@ -1,29 +1,86 @@
+class TrieNode{
+public:
+    TrieNode* children[27] = {NULL};
+    int index = -1;
+};
+
+class Trie{
+    TrieNode* root = new TrieNode();
+    
+public:
+    void insert(string& word, int& index){
+        TrieNode* root = this->root;
+        for(auto ch:word){
+            if(root->children[ch-'a'] == NULL){
+                root->children[ch-'a'] = new TrieNode();
+            }
+            root = root->children[ch-'a'];
+            root->index = index;
+        }
+    }
+    
+    int search(string word){
+        TrieNode* root = this->root;
+        for(auto ch:word){
+            if(root->children[ch-'a'] == NULL){
+                return -1;
+            }else{
+                root = root->children[ch-'a'];
+            }
+        }
+        return root->index;
+    }
+};
+
 class WordFilter {
-    unordered_map<string, int> stringToIndex;
+    Trie* dict = new Trie();
     
 public:
     WordFilter(vector<string>& words) {
         int size = words.size();
-        for(int k=0; k<size; k++){
-            int len = words[k].length();
-            string word = words[k];
-            for(int i=len; i>0; i--){
-                for(int j=0; j<len; j++){
-                    string temp = word.substr(0,i)+"-"+word.substr(j, len-j);
-                    stringToIndex[temp] = k;
-                }
+        for(int i=0; i<size; i++){
+            string word = words[i];
+            int len = word.length();
+            for(int j=0; j<len; j++){
+                string temp = word.substr(j)+"{"+word;
+                dict->insert(temp, i);
             }
         }
     }
     
     int f(string prefix, string suffix) {
-        if(stringToIndex.count(prefix+"-"+suffix) > 0){
-            return stringToIndex[prefix+"-"+suffix];
-        }else{
-            return -1;
-        }
+        return dict->search(suffix+"{"+prefix);
     }
 };
+
+
+// Second Try
+// class WordFilter {
+//     unordered_map<string, int> stringToIndex;
+    
+// public:
+//     WordFilter(vector<string>& words) {
+//         int size = words.size();
+//         for(int k=0; k<size; k++){
+//             int len = words[k].length();
+//             string word = words[k];
+//             for(int i=len; i>0; i--){
+//                 for(int j=0; j<len; j++){
+//                     string temp = word.substr(0,i)+"-"+word.substr(j, len-j);
+//                     stringToIndex[temp] = k;
+//                 }
+//             }
+//         }
+//     }
+    
+//     int f(string prefix, string suffix) {
+//         if(stringToIndex.count(prefix+"-"+suffix) > 0){
+//             return stringToIndex[prefix+"-"+suffix];
+//         }else{
+//             return -1;
+//         }
+//     }
+// };
 
 
 
