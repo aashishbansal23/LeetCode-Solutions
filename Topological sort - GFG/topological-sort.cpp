@@ -15,20 +15,55 @@ class Solution
         ans.push_back(v);
     }
     
+    void kahn(vector<int> adj[], vector<int>& degree, vector<int>& ans, int V){
+        queue<int> q;
+        for(int i=0; i<V; i++){
+            if(degree[i] == 0){
+                q.push(i);
+            }
+        }
+        while(!q.empty()){
+            int currNode = q.front();
+            q.pop();
+            ans.push_back(currNode);
+            for(auto neighbour:adj[currNode]){
+                degree[neighbour]--;
+                if(degree[neighbour] == 0){
+                    q.push(neighbour);
+                }
+            }
+        }
+    }
+    
 	public:
 	//Function to return list containing vertices in Topological order. 
 	vector<int> topoSort(int V, vector<int> adj[]) 
 	{
 	    // code here
-	    vector<int> ans;
-	    unordered_map<int, bool> visited;
+	    // Kahn's Algorithm
+	    vector<int> degree(V, 0);
 	    for(int i=0; i<V; i++){
-	        if(!visited[i]){
-	            dfs(i, adj, visited, ans);
+	        for(auto j:adj[i]){
+	            degree[j]++;
 	        }
 	    }
-	    reverse(ans.begin(), ans.end());
+	    vector<int> ans;
+	    kahn(adj, degree, ans, V);
 	    return ans;
+	    
+	    
+	    
+	    
+	   // First Try DFS
+	   // vector<int> ans;
+	   // unordered_map<int, bool> visited;
+	   // for(int i=0; i<V; i++){
+	   //     if(!visited[i]){
+	   //         dfs(i, adj, visited, ans);
+	   //     }
+	   // }
+	   // reverse(ans.begin(), ans.end());
+	   // return ans;
 	}
 };
 
