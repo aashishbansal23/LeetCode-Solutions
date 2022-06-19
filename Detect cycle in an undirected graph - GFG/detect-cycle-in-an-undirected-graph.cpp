@@ -4,7 +4,7 @@ using namespace std;
 
  // } Driver Code Ends
 class Solution {
-    bool isCycleHelp(int v, vector<int> adj[], unordered_map<int, bool>& visited){
+    bool bfs(int v, vector<int> adj[], unordered_map<int, bool>& visited){
         unordered_map<int, int> parent;
         parent[v] = -1;
         visited[v] = true;
@@ -26,17 +26,46 @@ class Solution {
         return false;
     }
     
+    bool dfs(int v, int parent, vector<int> adj[], unordered_map<int, bool>& visited){
+        visited[v] = true;
+        for(auto neighbour:adj[v]){
+            if(visited[neighbour] && neighbour!=parent){
+                return true;
+            }
+            if(!visited[neighbour] && dfs(neighbour, v, adj, visited)){
+                return true;
+            }
+            
+        }
+        return false;
+    }
+    
   public:
     // Function to detect cycle in an undirected graph.
     bool isCycle(int V, vector<int> adj[]) {
         // Code here
+        
+        // Second Try DFS
         unordered_map<int, bool> visited;
         for(int i=0; i<V; i++){
-            if(!visited[i] && isCycleHelp(i, adj, visited)){
+            if(!visited[i] && dfs(i, -1, adj, visited)){
                 return true;
             }
         }
         return false;
+        
+        
+        
+        
+        
+        // First Try BFS
+        // unordered_map<int, bool> visited;
+        // for(int i=0; i<V; i++){
+        //     if(!visited[i] && bfs(i, adj, visited)){
+        //         return true;
+        //     }
+        // }
+        // return false;
     }
 };
 
