@@ -12,36 +12,61 @@ class Solution
     int spanningTree(int V, vector<vector<int>> adj[])
     {
         // code here
-        vector<int> weight(V, INT_MAX);
-        vector<bool> mst(V, false);
-        vector<int> parent(V, -1);
-        weight[0] = 0;
-        parent[0] = -1;
-        
-        for(int i=0; i<V; i++){
-            int minn = INT_MAX;
-            int node = 0;
-            for(int j=0; j<V; j++){
-                if(!mst[j] && minn>weight[j]){
-                    minn = weight[j];
-                    node = j;
-                }
-            }
-            mst[node] = true;
-            for(auto neighbour:adj[node]){
-                int nd = neighbour[0];
-                int wt = neighbour[1];
-                if(!mst[nd] && wt<weight[nd]){
-                    weight[nd] = wt;
-                    parent[nd] = node;
-                }
-            }
-        }
+        vector<bool> visited(V, false);
+        priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
+        pq.push({0,0}); // Weight, to
         int ans = 0;
-        for(int i=0; i<V; i++){
-            ans += weight[i];
+        while(!pq.empty()){
+            auto p = pq.top();
+            pq.pop();
+            int wt = p.first;
+            int to = p.second;
+            if(visited[to]){
+                continue;
+            }
+            ans += wt;
+            visited[to] = true;
+            for(auto neighbour:adj[to]){
+                if(!visited[neighbour[0]]){
+                    pq.push({neighbour[1], neighbour[0]});
+                }
+            }
         }
         return ans;
+        
+        
+        
+        
+        // vector<int> weight(V, INT_MAX);
+        // vector<bool> mst(V, false);
+        // vector<int> parent(V, -1);
+        // weight[0] = 0;
+        // parent[0] = -1;
+        
+        // for(int i=0; i<V; i++){
+        //     int minn = INT_MAX;
+        //     int node = 0;
+        //     for(int j=0; j<V; j++){
+        //         if(!mst[j] && minn>weight[j]){
+        //             minn = weight[j];
+        //             node = j;
+        //         }
+        //     }
+        //     mst[node] = true;
+        //     for(auto neighbour:adj[node]){
+        //         int nd = neighbour[0];
+        //         int wt = neighbour[1];
+        //         if(!mst[nd] && wt<weight[nd]){
+        //             weight[nd] = wt;
+        //             parent[nd] = node;
+        //         }
+        //     }
+        // }
+        // int ans = 0;
+        // for(int i=0; i<V; i++){
+        //     ans += weight[i];
+        // }
+        // return ans;
     }
 };
 
