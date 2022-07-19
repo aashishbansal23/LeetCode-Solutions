@@ -1,6 +1,7 @@
 class Solution {
 public:
     int minCost(vector<vector<int>>& grid) {
+        // 0/1 BFS
         int m = grid.size();
         int n = grid[0].size();
         int dx[] = {-1, 1, 0, 0};
