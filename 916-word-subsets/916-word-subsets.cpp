@@ -1,27 +1,34 @@
 class Solution {
-public:
-    vector<int> counter(string& word) {
-        vector<int> count(26);
-        for (char c : word) count[c - 'a']++;
+    vector<int> getCount(string& word){
+        vector<int> count(26, 0);
+        for(auto ch:word){
+            count[ch-'a']++;
+        }
         return count;
     }
     
-    vector<string> wordSubsets(vector<string>& A, vector<string>& B) {
-        vector<int> count(26), tmp(26);
-        int i;
-        for (string b : B) {
-            tmp = counter(b);
-            for (i = 0; i < 26; ++i)
-                count[i] = max(count[i], tmp[i]);
+public:
+    vector<string> wordSubsets(vector<string>& words1, vector<string>& words2) {
+        vector<int> count(26, 0);
+        for(auto word:words2){
+            vector<int> temp = getCount(word);
+            for(int i=0; i<26; i++){
+                count[i] = max(count[i], temp[i]);
+            }
         }
-        vector<string> res;
-        for (string a : A) {
-            tmp = counter(a);
-            for (i = 0; i < 26; ++i)
-                if (tmp[i] < count[i])
+        vector<string> ans;
+        for(auto word:words1){
+            vector<int> temp = getCount(word);
+            int i = 0;
+            for(i=0; i<26; i++){
+                if(count[i] > temp[i]){
                     break;
-            if (i == 26) res.push_back(a);
+                }
+            }
+            if(i == 26){
+                ans.push_back(word);
+            }
         }
-        return res;
+        return ans;
     }
 };
