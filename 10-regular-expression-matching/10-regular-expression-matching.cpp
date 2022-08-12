@@ -63,7 +63,7 @@ class Solution {
 public:
     bool isMatch(string s, string p) {
         // Recursion
-        return isMatchRecursion(s, s.length(), p, p.length());
+        // return isMatchRecursion(s, s.length(), p, p.length());
         
         // Memoization
         vector<vector<int>> dp(s.length()+1, vector<int>(p.length()+1, -1));
