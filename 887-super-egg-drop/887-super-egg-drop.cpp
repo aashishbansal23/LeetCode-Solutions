@@ -59,6 +59,17 @@ class Solution {
         return i;
     }
     
+    int superEggDrop1DDP(int eggs, int floors){
+        vector<int> dp(eggs+1, 0);
+        int i = 0;
+        for(i=0; dp[eggs]<floors; i++){
+            for(int k=eggs; k>0; k--){
+                dp[k] += dp[k-1]+1;
+            }
+        }
+        return i;
+    }
+    
 public:
     int superEggDrop(int k, int n) {
         // Recursion
@@ -68,7 +79,10 @@ public:
         // vector<vector<int>> dp(k+1, vector<int>(n+1, -1));
         // return superEggDropMemoization(k, n, dp);
         
+        // 2D DP
+        // return superEggDropDP(k, n);
         
-        return superEggDropDP(k, n);
+        // 1D DP
+        return superEggDrop1DDP(k, n);
     }
 };
