@@ -451,6 +451,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | # | Title | Solution |
 |---|-------|----------|
 | 3737 | Count Subarrays With Majority Element I | [CPP](3001-4000/3737_count_subarrays_with_majority_element_i/3737_count_subarrays_with_majority_element_i.cpp) |
+| 3739 | Count Subarrays With Majority Element Ii | [CPP](3001-4000/3739_count_subarrays_with_majority_element_ii/3739_count_subarrays_with_majority_element_ii.cpp) |
 
 [🔼 Back to Top](#leetcode-solutions-number-wise)
 
