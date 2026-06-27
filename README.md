@@ -116,7 +116,6 @@ This repository contains my solutions organized **by problem number ranges**.
 | 176 | Second Highest Salary | [SQL](0001-1000/0176_second_highest_salary/0176_second_highest_salary.sql) |
 | 177 | Nth Highest Salary | [SQL](0001-1000/0177_nth_highest_salary/0177_nth_highest_salary.sql) |
 | 178 | Rank Scores | [SQL](0001-1000/0178_rank_scores/0178_rank_scores.sql) |
-| 179 | Largest Number | - |
 | 180 | Consecutive Numbers | [SQL](0001-1000/0180_consecutive_numbers/0180_consecutive_numbers.sql) |
 | 184 | Department Highest Salary | [SQL](0001-1000/0184_department_highest_salary/0184_department_highest_salary.sql) |
 | 188 | Best Time To Buy And Sell Stock Iv | [CPP](0001-1000/0188_best_time_to_buy_and_sell_stock_iv/0188_best_time_to_buy_and_sell_stock_iv.cpp) |
@@ -159,7 +158,6 @@ This repository contains my solutions organized **by problem number ranges**.
 | 315 | Count Of Smaller Numbers After Self | [CPP](0001-1000/0315_count_of_smaller_numbers_after_self/0315_count_of_smaller_numbers_after_self.cpp) |
 | 316 | Remove Duplicate Letters | [CPP](0001-1000/0316_remove_duplicate_letters/0316_remove_duplicate_letters.cpp) |
 | 322 | Coin Change | [CPP](0001-1000/0322_coin_change/0322_coin_change.cpp) |
-| 326 | Power Of Three | - |
 | 329 | Longest Increasing Path In A Matrix | [CPP](0001-1000/0329_longest_increasing_path_in_a_matrix/0329_longest_increasing_path_in_a_matrix.cpp) |
 | 332 | Reconstruct Itinerary | [CPP](0001-1000/0332_reconstruct_itinerary/0332_reconstruct_itinerary.cpp) |
 | 341 | Flatten Nested List Iterator | [CPP](0001-1000/0341_flatten_nested_list_iterator/0341_flatten_nested_list_iterator.cpp) |
@@ -450,7 +448,9 @@ This repository contains my solutions organized **by problem number ranges**.
 
 ## 3001-4000
 
-*(No problems added yet in 3001-4000)*
+| # | Title | Solution |
+|---|-------|----------|
+| 3737 | Count Subarrays With Majority Element I | [CPP](3001-4000/3737_count_subarrays_with_majority_element_i/3737_count_subarrays_with_majority_element_i.cpp) |
 
 [🔼 Back to Top](#leetcode-solutions-number-wise)
 
