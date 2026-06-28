@@ -5,13 +5,14 @@ public:
         if(arrSize == 0){
             return 0;
         }
-        sort(arr.begin(), arr.end());
-        arr[0] = 1;
-        for(int i=1; i<arrSize; i++){
-            if(arr[i] > arr[i-1]){
-                arr[i] = arr[i-1]+1;
-            }
+        vector<int> frequency(arrSize+1, 0);
+        for(int a:arr){
+            frequency[min(a, arrSize)]++;
         }
-        return arr[arrSize-1];
+        int val = 0;
+        for(int i=1; i<=arrSize; i++){
+            val = min(i, val+frequency[i]);
+        }
+        return val;
     }
 };
