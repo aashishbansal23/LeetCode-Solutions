@@ -407,6 +407,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 1791 | Find Center Of Star Graph | [CPP](1001-2000/1791_find_center_of_star_graph/1791_find_center_of_star_graph.cpp) |
 | 1819 | Number Of Different Subsequences Gcds | [CPP](1001-2000/1819_number_of_different_subsequences_gcds/1819_number_of_different_subsequences_gcds.cpp) |
 | 1838 | Frequency Of The Most Frequent Element | [CPP](1001-2000/1838_frequency_of_the_most_frequent_element/1838_frequency_of_the_most_frequent_element.cpp) |
+| 1846 | Maximum Element After Decreasing And Rearranging | [CPP](1001-2000/1846_maximum_element_after_decreasing_and_rearranging/1846_maximum_element_after_decreasing_and_rearranging.cpp) |
 | 1855 | Maximum Distance Between A Pair Of Values | [CPP](1001-2000/1855_maximum_distance_between_a_pair_of_values/1855_maximum_distance_between_a_pair_of_values.cpp) |
 | 1857 | Largest Color Value In A Directed Graph | [CPP](1001-2000/1857_largest_color_value_in_a_directed_graph/1857_largest_color_value_in_a_directed_graph.cpp) |
 | 1877 | Minimize Maximum Pair Sum In Array | [CPP](1001-2000/1877_minimize_maximum_pair_sum_in_array/1877_minimize_maximum_pair_sum_in_array.cpp) |
