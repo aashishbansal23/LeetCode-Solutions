@@ -414,6 +414,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 1905 | Count Sub Islands | [CPP](1001-2000/1905_count_sub_islands/1905_count_sub_islands.cpp) |
 | 1910 | Remove All Occurrences Of A Substring | [CPP](1001-2000/1910_remove_all_occurrences_of_a_substring/1910_remove_all_occurrences_of_a_substring.cpp) |
 | 1926 | Nearest Exit From Entrance In Maze | [CPP](1001-2000/1926_nearest_exit_from_entrance_in_maze/1926_nearest_exit_from_entrance_in_maze.cpp) |
+| 1967 | Number Of Strings That Appear As Substrings In Word | [CPP](1001-2000/1967_number_of_strings_that_appear_as_substrings_in_word/1967_number_of_strings_that_appear_as_substrings_in_word.cpp) |
 | 1971 | Find If Path Exists In Graph | [CPP](1001-2000/1971_find_if_path_exists_in_graph/1971_find_if_path_exists_in_graph.cpp) |
 | 1985 | Find The Kth Largest Integer In The Array | [CPP](1001-2000/1985_find_the_kth_largest_integer_in_the_array/1985_find_the_kth_largest_integer_in_the_array.cpp) |
 | 1996 | The Number Of Weak Characters In The Game | - |
