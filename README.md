@@ -357,6 +357,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 1346 | Check If N And Its Double Exist | [CPP](1001-2000/1346_check_if_n_and_its_double_exist/1346_check_if_n_and_its_double_exist.cpp) |
 | 1351 | Count Negative Numbers In A Sorted Matrix | [CPP](1001-2000/1351_count_negative_numbers_in_a_sorted_matrix/1351_count_negative_numbers_in_a_sorted_matrix.cpp) |
 | 1354 | Construct Target Array With Multiple Sums | [CPP](1001-2000/1354_construct_target_array_with_multiple_sums/1354_construct_target_array_with_multiple_sums.cpp) |
+| 1358 | Number Of Substrings Containing All Three Characters | [CPP](1001-2000/1358_number_of_substrings_containing_all_three_characters/1358_number_of_substrings_containing_all_three_characters.cpp) |
 | 1365 | How Many Numbers Are Smaller Than The Current Number | [CPP](1001-2000/1365_how_many_numbers_are_smaller_than_the_current_number/1365_how_many_numbers_are_smaller_than_the_current_number.cpp) |
 | 1366 | Rank Teams By Votes | [CPP](1001-2000/1366_rank_teams_by_votes/1366_rank_teams_by_votes.cpp) |
 | 1367 | Linked List In Binary Tree | [CPP](1001-2000/1367_linked_list_in_binary_tree/1367_linked_list_in_binary_tree.cpp) |
