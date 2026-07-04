@@ -444,6 +444,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 2240 | Number Of Ways To Buy Pens And Pencils | [CPP](2001-3000/2240_number_of_ways_to_buy_pens_and_pencils/2240_number_of_ways_to_buy_pens_and_pencils.cpp) |
 | 2265 | Count Nodes Equal To Average Of Subtree | [CPP](2001-3000/2265_count_nodes_equal_to_average_of_subtree/2265_count_nodes_equal_to_average_of_subtree.cpp) |
 | 2295 | Replace Elements In An Array | [CPP](2001-3000/2295_replace_elements_in_an_array/2295_replace_elements_in_an_array.cpp) |
+| 2492 | Minimum Score Of A Path Between Two Cities | [CPP](2001-3000/2492_minimum_score_of_a_path_between_two_cities/2492_minimum_score_of_a_path_between_two_cities.cpp) |
 | 2812 | Find The Safest Path In A Grid | [CPP](2001-3000/2812_find_the_safest_path_in_a_grid/2812_find_the_safest_path_in_a_grid.cpp) |
 
 [🔼 Back to Top](#leetcode-solutions-number-wise)
