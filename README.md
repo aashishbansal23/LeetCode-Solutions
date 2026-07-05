@@ -340,6 +340,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 1261 | Find Elements In A Contaminated Binary Tree | [CPP](1001-2000/1261_find_elements_in_a_contaminated_binary_tree/1261_find_elements_in_a_contaminated_binary_tree.cpp) |
 | 1268 | Search Suggestions System | [CPP](1001-2000/1268_search_suggestions_system/1268_search_suggestions_system.cpp) |
 | 1293 | Shortest Path In A Grid With Obstacles Elimination | [CPP](1001-2000/1293_shortest_path_in_a_grid_with_obstacles_elimination/1293_shortest_path_in_a_grid_with_obstacles_elimination.cpp) |
+| 1301 | Number Of Paths With Max Score | [CPP](1001-2000/1301_number_of_paths_with_max_score/1301_number_of_paths_with_max_score.cpp) |
 | 1302 | Deepest Leaves Sum | [CPP](1001-2000/1302_deepest_leaves_sum/1302_deepest_leaves_sum.cpp) |
 | 1306 | Jump Game Iii | [CPP](1001-2000/1306_jump_game_iii/1306_jump_game_iii.cpp) |
 | 1312 | Minimum Insertion Steps To Make A String Palindrome | [CPP](1001-2000/1312_minimum_insertion_steps_to_make_a_string_palindrome/1312_minimum_insertion_steps_to_make_a_string_palindrome.cpp) |
