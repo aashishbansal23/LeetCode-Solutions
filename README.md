@@ -339,6 +339,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 1260 | Shift 2D Grid | [CPP](1001-2000/1260_shift_2d_grid/1260_shift_2d_grid.cpp) |
 | 1261 | Find Elements In A Contaminated Binary Tree | [CPP](1001-2000/1261_find_elements_in_a_contaminated_binary_tree/1261_find_elements_in_a_contaminated_binary_tree.cpp) |
 | 1268 | Search Suggestions System | [CPP](1001-2000/1268_search_suggestions_system/1268_search_suggestions_system.cpp) |
+| 1288 | Remove Covered Intervals | [CPP](1001-2000/1288_remove_covered_intervals/1288_remove_covered_intervals.cpp) |
 | 1293 | Shortest Path In A Grid With Obstacles Elimination | [CPP](1001-2000/1293_shortest_path_in_a_grid_with_obstacles_elimination/1293_shortest_path_in_a_grid_with_obstacles_elimination.cpp) |
 | 1301 | Number Of Paths With Max Score | [CPP](1001-2000/1301_number_of_paths_with_max_score/1301_number_of_paths_with_max_score.cpp) |
 | 1302 | Deepest Leaves Sum | [CPP](1001-2000/1302_deepest_leaves_sum/1302_deepest_leaves_sum.cpp) |
