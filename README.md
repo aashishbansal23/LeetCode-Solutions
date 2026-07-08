@@ -463,6 +463,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 3737 | Count Subarrays With Majority Element I | [CPP](3001-4000/3737_count_subarrays_with_majority_element_i/3737_count_subarrays_with_majority_element_i.cpp) |
 | 3739 | Count Subarrays With Majority Element Ii | [CPP](3001-4000/3739_count_subarrays_with_majority_element_ii/3739_count_subarrays_with_majority_element_ii.cpp) |
 | 3754 | Concatenate Non Zero Digits And Multiply By Sum I | [CPP](3001-4000/3754_concatenate_non_zero_digits_and_multiply_by_sum_i/3754_concatenate_non_zero_digits_and_multiply_by_sum_i.cpp) |
+| 3756 | Concatenate Non Zero Digits And Multiply By Sum Ii | [CPP](3001-4000/3756_concatenate_non_zero_digits_and_multiply_by_sum_ii/3756_concatenate_non_zero_digits_and_multiply_by_sum_ii.cpp) |
 
 [🔼 Back to Top](#leetcode-solutions-number-wise)
 
