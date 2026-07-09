@@ -459,6 +459,7 @@ This repository contains my solutions organized **by problem number ranges**.
 |---|-------|----------|
 | 3020 | Find The Maximum Number Of Elements In Subset | [CPP](3001-4000/3020_find_the_maximum_number_of_elements_in_subset/3020_find_the_maximum_number_of_elements_in_subset.cpp) |
 | 3286 | Find A Safe Walk Through A Grid | [CPP](3001-4000/3286_find_a_safe_walk_through_a_grid/3286_find_a_safe_walk_through_a_grid.cpp) |
+| 3532 | Path Existence Queries In A Graph I | [CPP](3001-4000/3532_path_existence_queries_in_a_graph_i/3532_path_existence_queries_in_a_graph_i.cpp) |
 | 3620 | Network Recovery Pathways | [CPP](3001-4000/3620_network_recovery_pathways/3620_network_recovery_pathways.cpp) |
 | 3737 | Count Subarrays With Majority Element I | [CPP](3001-4000/3737_count_subarrays_with_majority_element_i/3737_count_subarrays_with_majority_element_i.cpp) |
 | 3739 | Count Subarrays With Majority Element Ii | [CPP](3001-4000/3739_count_subarrays_with_majority_element_ii/3739_count_subarrays_with_majority_element_ii.cpp) |
