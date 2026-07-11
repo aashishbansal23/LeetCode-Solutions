@@ -447,6 +447,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 2265 | Count Nodes Equal To Average Of Subtree | [CPP](2001-3000/2265_count_nodes_equal_to_average_of_subtree/2265_count_nodes_equal_to_average_of_subtree.cpp) |
 | 2295 | Replace Elements In An Array | [CPP](2001-3000/2295_replace_elements_in_an_array/2295_replace_elements_in_an_array.cpp) |
 | 2492 | Minimum Score Of A Path Between Two Cities | [CPP](2001-3000/2492_minimum_score_of_a_path_between_two_cities/2492_minimum_score_of_a_path_between_two_cities.cpp) |
+| 2685 | Count The Number Of Complete Components | [CPP](2001-3000/2685_count_the_number_of_complete_components/2685_count_the_number_of_complete_components.cpp) |
 | 2812 | Find The Safest Path In A Grid | [CPP](2001-3000/2812_find_the_safest_path_in_a_grid/2812_find_the_safest_path_in_a_grid.cpp) |
 
 [🔼 Back to Top](#leetcode-solutions-number-wise)
