@@ -350,6 +350,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 1319 | Number Of Operations To Make Network Connected | [CPP](1001-2000/1319_number_of_operations_to_make_network_connected/1319_number_of_operations_to_make_network_connected.cpp) |
 | 1325 | Delete Leaves With A Given Value | [CPP](1001-2000/1325_delete_leaves_with_a_given_value/1325_delete_leaves_with_a_given_value.cpp) |
 | 1329 | Sort The Matrix Diagonally | [CPP](1001-2000/1329_sort_the_matrix_diagonally/1329_sort_the_matrix_diagonally.cpp) |
+| 1331 | Rank Transform Of An Array | [CPP](1001-2000/1331_rank_transform_of_an_array/1331_rank_transform_of_an_array.cpp) |
 | 1332 | Remove Palindromic Subsequences | [CPP](1001-2000/1332_remove_palindromic_subsequences/1332_remove_palindromic_subsequences.cpp) |
 | 1334 | Find The City With The Smallest Number Of Neighbors At A Threshold Distance | [CPP](1001-2000/1334_find_the_city_with_the_smallest_number_of_neighbors_at_a_threshold_distance/1334_find_the_city_with_the_smallest_number_of_neighbors_at_a_threshold_distance.cpp) |
 | 1337 | The K Weakest Rows In A Matrix | [CPP](1001-2000/1337_the_k_weakest_rows_in_a_matrix/1337_the_k_weakest_rows_in_a_matrix.cpp) |
