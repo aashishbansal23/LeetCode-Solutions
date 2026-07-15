@@ -466,6 +466,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 3532 | Path Existence Queries In A Graph I | [CPP](3001-4000/3532_path_existence_queries_in_a_graph_i/3532_path_existence_queries_in_a_graph_i.cpp) |
 | 3534 | Path Existence Queries In A Graph Ii | [CPP](3001-4000/3534_path_existence_queries_in_a_graph_ii/3534_path_existence_queries_in_a_graph_ii.cpp) |
 | 3620 | Network Recovery Pathways | [CPP](3001-4000/3620_network_recovery_pathways/3620_network_recovery_pathways.cpp) |
+| 3658 | Gcd Of Odd And Even Sums | [CPP](3001-4000/3658_gcd_of_odd_and_even_sums/3658_gcd_of_odd_and_even_sums.cpp) |
 | 3737 | Count Subarrays With Majority Element I | [CPP](3001-4000/3737_count_subarrays_with_majority_element_i/3737_count_subarrays_with_majority_element_i.cpp) |
 | 3739 | Count Subarrays With Majority Element Ii | [CPP](3001-4000/3739_count_subarrays_with_majority_element_ii/3739_count_subarrays_with_majority_element_ii.cpp) |
 | 3754 | Concatenate Non Zero Digits And Multiply By Sum I | [CPP](3001-4000/3754_concatenate_non_zero_digits_and_multiply_by_sum_i/3754_concatenate_non_zero_digits_and_multiply_by_sum_i.cpp) |
