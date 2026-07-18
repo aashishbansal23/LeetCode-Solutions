@@ -421,6 +421,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 1926 | Nearest Exit From Entrance In Maze | [CPP](1001-2000/1926_nearest_exit_from_entrance_in_maze/1926_nearest_exit_from_entrance_in_maze.cpp) |
 | 1967 | Number Of Strings That Appear As Substrings In Word | [CPP](1001-2000/1967_number_of_strings_that_appear_as_substrings_in_word/1967_number_of_strings_that_appear_as_substrings_in_word.cpp) |
 | 1971 | Find If Path Exists In Graph | [CPP](1001-2000/1971_find_if_path_exists_in_graph/1971_find_if_path_exists_in_graph.cpp) |
+| 1979 | Find Greatest Common Divisor Of Array | [CPP](1001-2000/1979_find_greatest_common_divisor_of_array/1979_find_greatest_common_divisor_of_array.cpp) |
 | 1985 | Find The Kth Largest Integer In The Array | [CPP](1001-2000/1985_find_the_kth_largest_integer_in_the_array/1985_find_the_kth_largest_integer_in_the_array.cpp) |
 | 1996 | The Number Of Weak Characters In The Game | - |
 
