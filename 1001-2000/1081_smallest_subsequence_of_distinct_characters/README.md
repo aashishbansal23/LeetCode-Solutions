@@ -1,25 +1,42 @@
-<h2><a href="https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/">1081. Smallest Subsequence of Distinct Characters</a></h2><h3>Medium</h3><hr><div><p>Given a string <code>s</code>, return <em>the lexicographically smallest subsequence of</em> <code>s</code> <em>that contains all the distinct characters of</em> <code>s</code> <em>exactly once</em>.</p>
+# 1081. Smallest Subsequence of Distinct Characters
 
-<p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+**Difficulty:** Medium
 
-<pre><strong>Input:</strong> s = "bcabc"
-<strong>Output:</strong> "abc"
-</pre>
+[View on LeetCode](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/)
 
-<p><strong>Example 2:</strong></p>
+---
 
-<pre><strong>Input:</strong> s = "cbacdcbc"
-<strong>Output:</strong> "acdb"
-</pre>
+Given a string `s`, return _the_ _lexicographically smallest_ _subsequence_ _of_ `s` _that contains all the distinct characters of_ `s` _exactly once_.
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+ 
 
-<ul>
-	<li><code>1 &lt;= s.length &lt;= 1000</code></li>
-	<li><code>s</code> consists of lowercase English letters.</li>
-</ul>
+**Example 1:**
 
-<p>&nbsp;</p>
-<strong>Note:</strong> This question is the same as 316: <a href="https://leetcode.com/problems/remove-duplicate-letters/" target="_blank">https://leetcode.com/problems/remove-duplicate-letters/</a></div>
+
+```
+Input: s = "bcabc"
+Output: "abc"
+```
+ 
+
+**Example 2:**
+
+
+```
+Input: s = "cbacdcbc"
+Output: "acdb"
+```
+ 
+
+ 
+
+**Constraints:**
+
+  * `1 <= s.length <= 1000`
+  * `s` consists of lowercase English letters.
+
+
+
+ 
+
+**Note:** This question is the same as 316: <https://leetcode.com/problems/remove-duplicate-letters/>
