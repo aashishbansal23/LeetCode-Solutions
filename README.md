@@ -465,6 +465,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 3286 | Find A Safe Walk Through A Grid | [CPP](3001-4000/3286_find_a_safe_walk_through_a_grid/3286_find_a_safe_walk_through_a_grid.cpp) |
 | 3312 | Sorted Gcd Pair Queries | [CPP](3001-4000/3312_sorted_gcd_pair_queries/3312_sorted_gcd_pair_queries.cpp) |
 | 3336 | Find The Number Of Subsequences With Equal Gcd | [CPP](3001-4000/3336_find_the_number_of_subsequences_with_equal_gcd/3336_find_the_number_of_subsequences_with_equal_gcd.cpp) |
+| 3499 | Maximize Active Section With Trade I | [CPP](3001-4000/3499_maximize_active_section_with_trade_i/3499_maximize_active_section_with_trade_i.cpp) |
 | 3532 | Path Existence Queries In A Graph I | [CPP](3001-4000/3532_path_existence_queries_in_a_graph_i/3532_path_existence_queries_in_a_graph_i.cpp) |
 | 3534 | Path Existence Queries In A Graph Ii | [CPP](3001-4000/3534_path_existence_queries_in_a_graph_ii/3534_path_existence_queries_in_a_graph_ii.cpp) |
 | 3620 | Network Recovery Pathways | [CPP](3001-4000/3620_network_recovery_pathways/3620_network_recovery_pathways.cpp) |
