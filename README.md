@@ -218,6 +218,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 594 | Longest Harmonious Subsequence | - |
 | 606 | Construct String From Binary Tree | [CPP](0001-1000/0606_construct_string_from_binary_tree/0606_construct_string_from_binary_tree.cpp) |
 | 617 | Merge Two Binary Trees | [CPP](0001-1000/0617_merge_two_binary_trees/0617_merge_two_binary_trees.cpp) |
+| 628 | Maximum Product Of Three Numbers | [CPP](0001-1000/0628_maximum_product_of_three_numbers/0628_maximum_product_of_three_numbers.cpp) |
 | 629 | K Inverse Pairs Array | [CPP](0001-1000/0629_k_inverse_pairs_array/0629_k_inverse_pairs_array.cpp) |
 | 630 | Course Schedule Iii | [CPP](0001-1000/0630_course_schedule_iii/0630_course_schedule_iii.cpp) |
 | 632 | Smallest Range Covering Elements From K Lists | [CPP](0001-1000/0632_smallest_range_covering_elements_from_k_lists/0632_smallest_range_covering_elements_from_k_lists.cpp) |
