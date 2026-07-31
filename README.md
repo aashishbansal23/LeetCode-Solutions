@@ -464,6 +464,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | # | Title | Solution |
 |---|-------|----------|
 | 3014 | Minimum Number Of Pushes To Type Word I | [CPP](3001-4000/3014_minimum_number_of_pushes_to_type_word_i/3014_minimum_number_of_pushes_to_type_word_i.cpp) |
+| 3016 | Minimum Number Of Pushes To Type Word Ii | [CPP](3001-4000/3016_minimum_number_of_pushes_to_type_word_ii/3016_minimum_number_of_pushes_to_type_word_ii.cpp) |
 | 3020 | Find The Maximum Number Of Elements In Subset | [CPP](3001-4000/3020_find_the_maximum_number_of_elements_in_subset/3020_find_the_maximum_number_of_elements_in_subset.cpp) |
 | 3286 | Find A Safe Walk Through A Grid | [CPP](3001-4000/3286_find_a_safe_walk_through_a_grid/3286_find_a_safe_walk_through_a_grid.cpp) |
 | 3312 | Sorted Gcd Pair Queries | [CPP](3001-4000/3312_sorted_gcd_pair_queries/3312_sorted_gcd_pair_queries.cpp) |
