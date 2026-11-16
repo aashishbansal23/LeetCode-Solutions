@@ -449,6 +449,7 @@ This repository contains my solutions organized **by problem number ranges**.
 | 2196 | Create Binary Tree From Descriptions | [CPP](2001-3000/2196_create_binary_tree_from_descriptions/2196_create_binary_tree_from_descriptions.cpp) |
 | 2221 | Find Triangular Sum Of An Array | [CPP](2001-3000/2221_find_triangular_sum_of_an_array/2221_find_triangular_sum_of_an_array.cpp) |
 | 2240 | Number Of Ways To Buy Pens And Pencils | [CPP](2001-3000/2240_number_of_ways_to_buy_pens_and_pencils/2240_number_of_ways_to_buy_pens_and_pencils.cpp) |
+| 2243 | Calculate Digit Sum Of A String | [CPP](2001-3000/2243_calculate_digit_sum_of_a_string/2243_calculate_digit_sum_of_a_string.cpp) |
 | 2265 | Count Nodes Equal To Average Of Subtree | [CPP](2001-3000/2265_count_nodes_equal_to_average_of_subtree/2265_count_nodes_equal_to_average_of_subtree.cpp) |
 | 2295 | Replace Elements In An Array | [CPP](2001-3000/2295_replace_elements_in_an_array/2295_replace_elements_in_an_array.cpp) |
 | 2492 | Minimum Score Of A Path Between Two Cities | [CPP](2001-3000/2492_minimum_score_of_a_path_between_two_cities/2492_minimum_score_of_a_path_between_two_cities.cpp) |
